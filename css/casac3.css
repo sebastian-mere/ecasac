@@ -31,7 +31,7 @@ hr {
   background-color: #244480;
   max-width: 95%;
 }
-
+/* 
 .consulte {
   font-size: 1.6rem;
   background-color: #244480;
@@ -96,20 +96,21 @@ textarea {
   border-bottom: 2px solid #343b46;
   z-index: 10;
   backdrop-filter: blur(4px);
+  padding: 0 5%;
 }
 .casac-header__logo {
   height: 80px;
-  padding: 15px;
+  padding: 15px 20px;
   flex: 1 0 auto;
   display: flex;
-  justify-content: center;
+  justify-content: start;
 }
 .casac-header__logo img {
   max-width: 100%;
 }
 
 .casac-header__nav {
-  flex: 2 0 auto;
+  /*flex: 2 0 auto;*/
   display: flex;
   justify-content: space-around;
   font-size: 1.2rem;
