@@ -20,6 +20,7 @@ section {
 }
 
 h2 {
+    font-family: "Inter", sans-serif;
   font-weight: 900;
   margin: 0.8rem;
 }
@@ -643,6 +644,7 @@ textarea {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
+  text-align: justify;
   color: #5f6d7e;
 }
 
