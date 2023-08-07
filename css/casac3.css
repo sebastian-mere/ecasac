@@ -96,7 +96,7 @@ textarea {
   border-bottom: 2px solid #343b46;
   z-index: 100;
   backdrop-filter: blur(4px);
-  padding: 0 5%;
+  padding: 0 10%;
 }
 .casac-header__logo {
   height: 80px;
@@ -240,14 +240,12 @@ textarea {
 
 .productos {
   margin: 0;
-  background-color: #e8e8e8;
+  background-color: #36A6DD;
   padding-bottom: 80px;
-  margin-top: -50px;
   padding-top: 70px;
 }
 
 .productos__container {
-  background-color: #e8e8e8;
   max-width: 1000px;
   margin: 0 auto;
 }
@@ -277,19 +275,18 @@ textarea {
 }
 
 .productos__categorias li {
-  background: white;
   cursor: pointer;
   transition: 200ms ease-out;
-  color: #244480;
-  border: 1px solid #244480;
-  margin-right: 10px;
+  color: #ffffff65;
+  border-bottom: 3px solid #ffffff65;
   padding: 10px 20px 10px 20px;
-  box-shadow: 0px 2px 2px 1px #aaa;
+  width: 30%;
+  text-align: center;
 }
 
 .productos__categorias li.selected,
 .productos__categorias li:hover {
-  background: #244480;
+  border-bottom: 3px solid #ffffff;
   color: white;
 }
 
@@ -679,7 +676,7 @@ textarea {
   background-image: url(../img/nosotros.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center center;
 }
 
 .distribuidores {
@@ -722,8 +719,47 @@ textarea {
   text-align: justify;
 }
 
-.distribuidores .marcas img {
-  width: 100%;
+.distribuidores .marca{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.distribuidores .marca img{
+  height: 40%;
+}
+
+.distribuidores .maxon{
+  height: 100px;
+  background: url(../img/bg-maxon.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.distribuidores .krom{
+  height: 100px;
+  background: url(../img/bg-krom.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.distribuidores .eclipse{
+  height: 100px;
+  background: url(../img/bg-eclipse.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.distribuidores .mcdonnell{
+  height: 100px;
+  background: url(../img/bg-mcdonnell.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .link-catalogo {
@@ -791,11 +827,10 @@ textarea {
 }
 
 .servicios .icons {
-  height: 250px;
+  height: 150px;
   margin-top: 30px;
-  display: grid;
+  display: flex;
   justify-content: center;
-  grid-template-columns: 1fr 1fr 1fr;
   gap: 5%;
   text-align: center;
 }
@@ -805,17 +840,22 @@ textarea {
   font-size: 1.2em;
 }
 
-.servicios .icons img {
-  height: 15%;
+.servicios .icon {
+  width: 33%;
 }
 
-.servicios .video {
+.servicios .icon img {
+  height: 30%;
+}
+
+ .video {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 30px;
 }
 
-.servicios .video .contenedor {
+ .video .contenedor {
   position: relative;
   width: 560px;
   height: 315px;
@@ -823,7 +863,7 @@ textarea {
   overflow: hidden;
 }
 
-.servicios .video iframe {
+ .video iframe {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -1278,6 +1318,7 @@ img {
 
 .slide__overlay p {
   padding-bottom: 30px;
+  text-align: justify;
 }
 
 .slide__overlay a {
