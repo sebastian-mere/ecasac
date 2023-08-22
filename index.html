@@ -60,11 +60,11 @@
           <img src="img/slide1.jpg" />
           <div class="slide__overlay">
             <h1>
-              45 años ofreciendo<br />
-              el mejor servicio
+              45 AÑOS DE EXPERIENCIA<br />
+              EN EL MERCADO
             </h1>
             <p>
-              Somos una empresa que comprende la provisión, distribución, venta
+              Somos una empresa que se dedica a la provisión, distribución, venta
               y puesta en marcha de insumos de automatización y control. Con
               trabajo y dedicación, nos ganamos la confianza de nuestros
               clientes desde hace 45 años.
@@ -133,18 +133,26 @@
               id="seguridad"
               onclick="selectSeguridad()"
             >
-            <img src="img/" alt="">
-            <b>HTS - HONEYWELL THERMAL SOLUCION</b> (SEGURIDAD DE LLAMA)
+            <div>
+              <div class="componente-img-hts"></div>
+              <b>HTS - HONEYWELL THERMAL SOLUCION</b> (SEGURIDAD DE LLAMA)
+            </div>
             </li>
             <li class="categoria" id="industrial" onclick="selectIndustrial()">
-            <b>PMC - PROCESS MEASUREMENT & CONTROL</b> (INDUSTRIAL)
+              <div>
+                <div class="componente-img-pmc"></div>
+                >PMC - PROCESS MEASUREMENT & CONTROL</b> (INDUSTRIAL)
+              </div>
 
             </li>
             <li class="categoria" id="componentes" onclick="selectComponentes()">
-            <b>AST - ADVANCED SENSING TECHNOLOGIES</b> (COMPONENTES)
+            <div>
+              <div class="componente-img-ast"></div>
+              <b>AST - ADVANCED SENSING TECHNOLOGIES</b> (COMPONENTES)
+            </div>
             </li>
           </ul>
-          <ul class="productos__subcategorias activo" id="subcat-componentes">
+          <ul class="productos__subcategorias" id="subcat-componentes">
             <li class="subcat" onclick="subcategoria(1)">Botoneras AML</li>
             <li class="subcat" onclick="subcategoria(2)">Interruptores</li>
             <li class="subcat" onclick="subcategoria(3)">Limites de Carrera</li>
@@ -166,7 +174,7 @@
             </li>
             <li class="subcat" onclick="subcategoria(12)">Wireless</li>
           </ul>
-          <ul class="productos__subcategorias" id="subcat-seguridad">
+          <ul class="productos__subcategorias activo" id="subcat-seguridad">
             <li class="subcat" onclick="subcategoria(13)">
               Actuadores / Motores
             </li>
@@ -2290,14 +2298,14 @@
               <div class="marca maxon">
                 <img src="img/maxon.png" alt="" />
               </div>
-              <p>
+              <!-- <p>
                 Maxon ha revolucionado el sector industrial desde 1916, y en la
                 actualidad es líder en el desarrollo de tecnología y diseño de
                 equipos de combustión . Maxon es ahora parte de la familia
                 Honeywell Thermal Solutions. Quemadores de gas de bajas
                 emisiones. Quemadores de combustóleo y diesel, Válvulas de
                 seguridad Válvulas de control de flujo Mezcladores.
-              </p>
+              </p>-->
               <p>
                 Productos: Quemadores de gas, de combustóleo y diésel. Válvulas
                 de seguridad, de control de flujo y mezcladoras.
@@ -2307,14 +2315,14 @@
               <div class="marca krom">
                 <img src="img/krom.png" alt="" />
               </div>
-              <p>
+              <!--<p>
                 Kromschröder combina la eficiencia energética, la máxima
                 seguridad y confiabilidad en procesos de tratamiento térmico
                 industrial, así como un óptimo equilibrio entre precio y
                 rendimiento, dando como resultado soluciones a la medida del
                 cliente. Kromschröder es ahora parte de la familia Honeywell
                 Thermal Solutions.
-              </p>
+              </p>-->
               <p>
                 Productos: Detectores de llama, quemadores, válvulas,
                 reguladores, controles de quemador, interruptores de presión.
@@ -2324,23 +2332,23 @@
               <div class="marca eclipse">
                 <img src="img/eclipse.png" alt="" />
               </div>
-              <p>
+              <!--<p>
                 Eclipse ofrece una amplia gama de productos para sistemas de
                 combustión, diseñados especialmente para procesos de calefacción
                 industrial. Su tecnología brinda calor seguro, confiable,
                 eficiente y limpio. Eclipse es ahora parte de la familia
                 Honeywell Thermal Solutions.
-              </p>
+              </p>-->
               <p>Productos: Sistemas de combustión.</p>
             </div>
             <div>
               <div class="marca mcdonnell">
                 <img src="img/mcdonnellmiller.png" alt="" />
               </div>
-              <p>
+              <!--<p>
                 Mc Donnell and Miller. Maneja el uso de interruptores de nivel o
                 flujo para calderas.
-              </p>
+              </p>-->
               <p>
                 Productos: Controles de caldera, controles de nivel para
                 caldera, interruptores de flujo, controles de nivel de líquido,
@@ -2761,29 +2769,6 @@
       event.target.classList.add("activo");
     }
 
-    function selectComponentes() {
-      document.querySelectorAll(`.productos__item`).forEach(function (el) {
-        el.classList.add("activo");
-      });
-      document.querySelectorAll(`.subcat`).forEach(function (el) {
-        el.classList.remove("activo");
-      });
-      document
-        .querySelectorAll(`.productos__subcategorias`)
-        .forEach(function (el) {
-          el.classList.remove("activo");
-        });
-      document.getElementById("subcat-componentes").classList.add("activo");
-
-      document.getElementById("componentes").classList.add("selected");
-      document.getElementById("seguridad").classList.remove("selected");
-      document.getElementById("industrial").classList.remove("selected");
-      document.getElementById("grid-componentes").classList.add("grid-activo");
-      document.getElementById("grid-seguridad").classList.remove("grid-activo");
-      document
-        .getElementById("grid-industrial")
-        .classList.remove("grid-activo");
-    }
     function selectSeguridad() {
       document.querySelectorAll(`.productos__item`).forEach(function (el) {
         el.classList.add("activo");
@@ -2830,6 +2815,30 @@
       document.getElementById("grid-seguridad").classList.remove("grid-activo");
       document.getElementById("grid-industrial").classList.add("grid-activo");
     }
+    function selectComponentes() {
+      document.querySelectorAll(`.productos__item`).forEach(function (el) {
+        el.classList.add("activo");
+      });
+      document.querySelectorAll(`.subcat`).forEach(function (el) {
+        el.classList.remove("activo");
+      });
+      document
+        .querySelectorAll(`.productos__subcategorias`)
+        .forEach(function (el) {
+          el.classList.remove("activo");
+        });
+      document.getElementById("subcat-componentes").classList.add("activo");
+
+      document.getElementById("componentes").classList.add("selected");
+      document.getElementById("seguridad").classList.remove("selected");
+      document.getElementById("industrial").classList.remove("selected");
+      document.getElementById("grid-componentes").classList.add("grid-activo");
+      document.getElementById("grid-seguridad").classList.remove("grid-activo");
+      document
+        .getElementById("grid-industrial")
+        .classList.remove("grid-activo");
+    }
+  
     /*
     // Get the modal
 var modal = document.getElementById("myModal");

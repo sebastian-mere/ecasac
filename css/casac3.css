@@ -20,7 +20,7 @@ section {
 }
 
 h2 {
-    font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 900;
   margin: 0.8rem;
 }
@@ -240,20 +240,17 @@ textarea {
 
 .productos {
   margin: 0;
-  background-color: #36A6DD;
-  padding-bottom: 80px;
-  padding-top: 70px;
+  background-color: #36a6dd;
+  padding: 5% 10%;
 }
 
 .productos__container {
-  max-width: 1000px;
   margin: 0 auto;
 }
 
 .productos__container h2 {
-  color: #244480;
+  color: white;
   text-align: center;
-  margin: 2px auto;
 }
 .productos__container p {
   margin: 2px;
@@ -261,6 +258,36 @@ textarea {
 
 .productos__intro {
   text-align: center;
+}
+
+.componente-img-hts{
+  height: 100px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background-image: url(../img/hts.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.componente-img-pmc{
+  height: 100px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background-image: url(../img/pmc.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.componente-img-ast{
+  height: 100px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background-image: url(../img/ast.webp);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .productos__categorias {
@@ -279,7 +306,7 @@ textarea {
   transition: 200ms ease-out;
   color: #ffffff65;
   border-bottom: 3px solid #ffffff65;
-  padding: 10px 20px 10px 20px;
+  padding: 10px 0;
   width: 30%;
   text-align: center;
 }
@@ -307,16 +334,17 @@ textarea {
 .productos__subcategorias {
   list-style: none;
   display: flex;
+  justify-content: center;
+  gap: 2%;
   margin: 20px auto 10px auto;
   padding: 0;
   text-transform: uppercase;
   flex-wrap: wrap;
   max-width: 95%;
-  color: #244480;
+  color: #1f70b3;
   font-size: 0.8rem;
   cursor: pointer;
   display: none;
-  border: 1px solid #244480;
 }
 
 .productos__subcategorias.activo {
@@ -325,12 +353,13 @@ textarea {
 
 .productos__subcategorias li {
   padding: 10px;
+  border-bottom: 3px solid #1f70b3;
 }
 
 .productos__subcategorias li.activo,
 .productos__subcategorias li:hover {
-  background-color: #244480;
-  color: white;
+  color: black;
+  border-bottom: 3px solid black;
 }
 
 .productos__grid {
@@ -357,49 +386,11 @@ textarea {
   position: relative;
   cursor: pointer;
   overflow: hidden;
-  box-shadow: 0 0 8px 0px #aaa;
   display: none;
 }
 
 .productos__item.activo {
   display: block;
-}
-
-.productos__item::before {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  transform: scaleY(0);
-  transform-origin: bottom;
-}
-.productos__item::after {
-  content: url(../img/f-detalles.svg);
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  z-index: 2;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 24px;
-  margin: auto;
-  transform: translateY(-90px);
-  transition: transform 0.25s ease-out;
-}
-.productos__item:hover::before {
-  transform: scaleY(1);
-  opacity: 1;
-  transition: transform 0.25s ease-out, opacity 0.2s ease-out;
-}
-
-.productos__item:hover::after {
-  transform: translateY(0);
 }
 
 .productos__item p {
@@ -409,15 +400,17 @@ textarea {
   left: 0;
   right: 0;
   margin: 0;
-  background-color: #244480;
-  padding: 5px;
+  background-color: #244480b0;
+  padding: 10px;
   color: white;
   text-transform: uppercase;
   text-align: center;
+  font-weight: bold;
 }
 
 .productos__item img {
   max-width: 100%;
+  border-radius: 10px 10px 0 0;
 }
 
 .productos__lightbox {
@@ -425,6 +418,7 @@ textarea {
   height: 100vh;
   z-index: -10;
   top: 0;
+  left: 0;
   background: #c2c2c2;
   width: 100%;
   padding: 20px;
@@ -634,7 +628,7 @@ textarea {
 */
 
 .nosotros {
-  background-color: #e8e9ee;
+  background-color: #36a6dd;
 }
 
 .nosotros .contenedor {
@@ -643,7 +637,7 @@ textarea {
   justify-content: space-between;
   align-items: stretch;
   text-align: justify;
-  color: #5f6d7e;
+  color: #fff;
 }
 
 .nosotros .contenedor .text {
@@ -656,7 +650,7 @@ textarea {
 }
 
 .nosotros .destacado {
-  color: #1f70b3;
+  color: white;
   font-weight: bold;
 }
 
@@ -665,7 +659,7 @@ textarea {
 }
 
 .nosotros .honeywell {
-  color: #b51122;
+  color: black;
   font-weight: bold;
 }
 
@@ -711,7 +705,7 @@ textarea {
 .distribuidores .marcas {
   margin-top: 30px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 5%;
   justify-content: space-around;
   align-items: stretch;
@@ -719,44 +713,46 @@ textarea {
   text-align: justify;
 }
 
-.distribuidores .marca{
+.distribuidores .marca {
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 15px;
 }
 
-.distribuidores .marca img{
+.distribuidores .marca img {
   height: 40%;
 }
 
-.distribuidores .maxon{
+.distribuidores .maxon {
   height: 100px;
-  background: url(../img/bg-maxon.jpg);
+  /*background: url(../img/bg-maxon.jpg);*/
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
-.distribuidores .krom{
+.distribuidores .krom {
   height: 100px;
-  background: url(../img/bg-krom.jpg);
+  /*background: url(../img/bg-krom.jpg);*/
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
-.distribuidores .eclipse{
+.distribuidores .eclipse {
   height: 100px;
-  background: url(../img/bg-eclipse.jpg);
+  padding: 10px;
+  /*background: url(../img/bg-eclipse.jpg);*/
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
-.distribuidores .mcdonnell{
+.distribuidores .mcdonnell {
   height: 100px;
-  background: url(../img/bg-mcdonnell.jpg);
+  padding: 10px;
+  /*background: url(../img/bg-mcdonnell.jpg);*/
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -848,14 +844,14 @@ textarea {
   height: 30%;
 }
 
- .video {
+.video {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 30px;
 }
 
- .video .contenedor {
+.video .contenedor {
   position: relative;
   width: 560px;
   height: 315px;
@@ -863,7 +859,7 @@ textarea {
   overflow: hidden;
 }
 
- .video iframe {
+.video iframe {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -896,6 +892,15 @@ textarea {
 .contacto .formulario {
   width: 100%;
 }
+
+.contacto .formulario p:first-of-type{
+  margin-top: 0;
+}
+
+.contacto .formulario input:last-of-type{
+  margin-bottom: 0;
+}
+
 
 .contacto .formulario input,
 .contacto .formulario textarea {
@@ -1529,6 +1534,7 @@ img {
 }
 
 .whatsapp {
-    position: fixed;
-    bottom: 30px;
-    right: 30px; }
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
