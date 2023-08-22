@@ -897,6 +897,11 @@ textarea {
   margin-top: 0;
 }
 
+.contacto .formulario a{
+  color: white;
+  text-decoration: none;
+}
+
 .contacto .formulario input:last-of-type{
   margin-bottom: 0;
 }
@@ -919,7 +924,6 @@ textarea {
   font-weight: 600;
   cursor: pointer;
   margin-top: 15px;
-  width: 50%;
 }
 
 .contacto .formulario input[type="submit"]:hover {
