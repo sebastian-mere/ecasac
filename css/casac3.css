@@ -88,12 +88,12 @@ textarea {
 }
 .casac-header {
   position: fixed;
-  background-color: #00000060;
+  background-color: #10265094;
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
   width: 100%;
-  border-bottom: 2px solid #343b46;
+  border-bottom: 2px solid #244480;
   z-index: 100;
   backdrop-filter: blur(4px);
   padding: 0 10%;
@@ -1323,6 +1323,11 @@ img {
   display: block;
   font-weight: 900;
   margin-right: 60px;
+}
+
+.slide__overlay h1 {
+  font-size: 3rem;
+  margin-bottom: 0
 }
 
 .slide__overlay p {
