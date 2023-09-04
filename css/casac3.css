@@ -1327,7 +1327,12 @@ img {
 
 .slide__overlay h1 {
   font-size: 3rem;
+  line-height: 2rem;
   margin-bottom: 0
+}
+
+.slide__overlay h1 span {
+  font-size: 1.5rem;
 }
 
 .slide__overlay p {
