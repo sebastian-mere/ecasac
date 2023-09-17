@@ -99,7 +99,7 @@ textarea {
   padding: 0 10%;
 }
 .casac-header__logo {
-  height: 80px;
+  height: 110px;
   padding: 15px 20px;
   flex: 1 0 auto;
   display: flex;
@@ -784,8 +784,8 @@ textarea {
   text-align: center;
   font-weight: 600;
   font-size: 1.2em;
-  color: #1a1a1a;
-  background-color: white;
+  color: #fff;
+  background-color: #1f70b3;
 }
 
 .post-catalogo p {
@@ -797,7 +797,7 @@ textarea {
 }
 
 .post-catalogo span {
-  color: #36a6dd;
+  color: #a1e0ff;
   font-weight: 800;
 }
 
@@ -1311,12 +1311,14 @@ img {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 10%;
+  right: 10%;
   margin: auto;
   width: 45%;
   height: min-content;
   font-weight: 300;
   z-index: 10;
+  text-align: right;
+  text-shadow: 0px 1px 5px #1a1a1a ;
 }
 
 .slide__overlay strong {
@@ -1327,27 +1329,21 @@ img {
 
 .slide__overlay h1 {
   font-size: 3rem;
-  line-height: 2rem;
+  line-height: 3rem;
+  margin-top: 20px;
   margin-bottom: 0
 }
 
-.slide__overlay h1 span {
-  font-size: 1.5rem;
-}
-
 .slide__overlay p {
-  padding-bottom: 30px;
-  text-align: justify;
+  margin-top: 40px;
+  margin-bottom: 0;
 }
 
-.slide__overlay a {
-  padding: 8px 35px;
-  margin-top: 40px;
-  border-radius: 15px;
-  color: white;
-  text-decoration: none;
-  background-color: #36a6dd;
-  z-index: 10;
+.slide__divider {
+  display: inline-block;
+  height: 3px;
+  width: 10%;
+  background: #fff;
 }
 
 .dots {
