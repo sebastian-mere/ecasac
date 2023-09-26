@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'Avenir';
+  src: url('/avenir.otf') format('opentype');
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -30,6 +35,13 @@ hr {
   height: 2px;
   background-color: #244480;
   max-width: 95%;
+}
+
+.casac {
+  font-family: "Avenir", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.2em
 }
 /* 
 .consulte {
@@ -88,7 +100,7 @@ textarea {
 }
 .casac-header {
   position: fixed;
-  background-color: #10265094;
+  background-color: #0c1b38c7;
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
@@ -99,7 +111,7 @@ textarea {
   padding: 0 10%;
 }
 .casac-header__logo {
-  height: 110px;
+  height: 120px;
   padding: 15px 20px;
   flex: 1 0 auto;
   display: flex;
@@ -1329,6 +1341,7 @@ img {
 
 .slide__overlay h1 {
   font-size: 3rem;
+  font-weight: 400;
   line-height: 3rem;
   margin-top: 20px;
   margin-bottom: 0
