@@ -1,7 +1,7 @@
 function scrollToSection(sectionId) {
     var section = document.getElementById(sectionId);
     if (section) {
-        var offset = section.offsetTop - 120;
+        var offset = section.offsetTop - 122;
         window.scrollTo({
             top: offset,
             behavior: 'smooth'
