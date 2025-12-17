@@ -3,8 +3,8 @@
 }
 
 @font-face {
-  font-family: 'Avenir';
-  src: url('/avenir.otf') format('opentype');
+  font-family: "Avenir";
+  src: url("/avenir.otf") format("opentype");
 }
 
 html {
@@ -41,7 +41,7 @@ hr {
   font-family: "Avenir", sans-serif;
   font-weight: 900;
   text-transform: uppercase;
-  letter-spacing: 0.2em
+  letter-spacing: 0.2em;
 }
 /* 
 .consulte {
@@ -250,6 +250,19 @@ textarea {
   margin: 0;
 }
 
+.video-wrapper {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.video-wrapper video {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+padding-bottom: 5%;
+
+}
+
 .productos {
   margin: 0;
   background-color: #36a6dd;
@@ -272,7 +285,7 @@ textarea {
   text-align: center;
 }
 
-.componente-img-hts{
+.componente-img-hts {
   height: 100px;
   margin-bottom: 10px;
   border-radius: 10px;
@@ -282,7 +295,7 @@ textarea {
   background-repeat: no-repeat;
 }
 
-.componente-img-pmc{
+.componente-img-pmc {
   height: 100px;
   margin-bottom: 10px;
   border-radius: 10px;
@@ -292,7 +305,7 @@ textarea {
   background-repeat: no-repeat;
 }
 
-.componente-img-ast{
+.componente-img-ast {
   height: 100px;
   margin-bottom: 10px;
   border-radius: 10px;
@@ -334,9 +347,6 @@ textarea {
 }
 
 @media only screen and (max-width: 620px) {
-  .productos__categorias {
-    display: block;
-  }
   .productos__categorias li {
     margin-right: 0;
     box-shadow: none;
@@ -905,19 +915,18 @@ textarea {
   width: 100%;
 }
 
-.contacto .formulario p:first-of-type{
+.contacto .formulario p:first-of-type {
   margin-top: 0;
 }
 
-.contacto .formulario a{
+.contacto .formulario a {
   color: white;
   text-decoration: none;
 }
 
-.contacto .formulario input:last-of-type{
+.contacto .formulario input:last-of-type {
   margin-bottom: 0;
 }
-
 
 .contacto .formulario input,
 .contacto .formulario textarea {
@@ -1330,7 +1339,7 @@ img {
   font-weight: 300;
   z-index: 10;
   text-align: right;
-  text-shadow: 0px 1px 5px #1a1a1a ;
+  text-shadow: 0px 1px 5px #1a1a1a;
 }
 
 .slide__overlay strong {
@@ -1344,7 +1353,7 @@ img {
   font-weight: 400;
   line-height: 3rem;
   margin-top: 20px;
-  margin-bottom: 0
+  margin-bottom: 0;
 }
 
 .slide__overlay p {
@@ -1560,4 +1569,183 @@ img {
   position: fixed;
   bottom: 30px;
   right: 30px;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5% 10% 0 10%;
+  text-align: center;
+}
+
+.bannerBg {
+  background-color: #f0f0f0;
+  background-image: url(/img/background.png);
+}
+
+.left img {
+  max-width: 100%;
+}
+
+.right {
+  flex: 1;
+}
+
+.tituloBanner {
+  color: #26a1e4;
+  font-size: 70px;
+  line-height: 74px;
+  font-weight: 300;
+}
+
+sup {
+  font-size: 37px;
+}
+
+.banner p {
+  color: white;
+}
+
+.banner .subtitulo {
+  font-size: 1.5em;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #26a1e4;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+@media only screen and (max-width: 750px) {
+  .casac-header {
+    padding: 0 5%;
+    justify-content: space-around;
+  }
+
+  .casac-header__nav a {
+    padding: 10px 15px;
+  }
+
+  .slide__overlay {
+    right: 0;
+    padding: 20px;
+  }
+
+  .banner {
+    flex-direction: column;
+    padding: 10px 20px 50px 20px;
+  }
+
+  .left img {
+    position: relative;
+    top: 50px;
+    max-width: 100%;
+  }
+  .tituloBanner {
+    font-size: 50px;
+    line-height: normal
+  }
+
+  .distribuidores .principal {
+    text-align: center;
+  }
+
+  .distribuidores .marcas {
+    grid-template-columns: 1fr;
+    gap: 2%;
+  }
+
+  .distribuidores .maxon,
+  .distribuidores .krom,
+  .distribuidores .eclipse,
+  .distribuidores .mcdonnell {
+    padding: 0;
+  }
+
+  .distribuidores p {
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .distribuidores .contenedor {
+    padding-bottom: 15%;
+  }
+
+  .video {
+    padding: 30px 0 0 0;
+  }
+
+  .servicios {
+    padding-bottom: 50px;
+  }
+
+  .nosotros .contenedor {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .nosotros .contenedor .text,
+  .nosotros .img {
+    width: 100%;
+  }
+
+  .nosotros .img {
+    margin: 30px;
+  }
+
+  .contacto .contenido {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3%;
+  }
+
+  .contacto .mapa {
+    height: 300px;
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .productos__categorias li{
+    width: 100%;
+  }
+
+  .componente-img-hts, .componente-img-pmc, .componente-img-ast {
+    height:50px
+  }
+
+  .servicios .icons {
+    height: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+    flex-direction: column;
+}
+
+.servicios .icon{
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.servicios .icon img{
+  height: 50px;
+}
+
+.servicios .icon p{
+  margin: 10px;
+}
+
+.servicios {
+  padding-bottom: 20px;
+}
 }
